@@ -1,0 +1,310 @@
+/* Written by Chris Jimenez */
+
+@import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
+@import url("http://fonts.cdnfonts.com/css/recoleta");
+
+:root {
+  --text: #e4ecf1;
+  --header-color: #110f11;
+  --maroon: #a0163d;
+  --yellow: #fac659;
+  --font-fam-1: "Recoleta", sans-serif;
+  --font-fam-2: "Segoe UI", sans-seif;
+}
+
+html {
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  z-index: 888;
+  top: 0;
+  position: fixed;
+}
+
+.inner-header {
+  background-color: var(--header-color);
+  display: none;
+  width: 100%;
+  height: 13vh;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset 0 -7px 9px -7px rgba(0, 0, 0, 1);
+}
+
+.right-header > a,
+.left-header > a {
+  padding: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  font-family: var(--font-fam-1);
+  font-size: 0.8em;
+  transition: 0.3s;
+}
+
+.right-header > a:hover,
+.left-header > a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  width: 20em;
+}
+
+.header-accent {
+  width: 100%;
+  height: 1vh;
+  opacity: 0.9;
+}
+
+.maroon {
+  background-color: var(--maroon);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.left-header,
+.right-header {
+  gap: 5%;
+  display: flex;
+  justify-content: center;
+  width: 40em;
+}
+
+.logo > img {
+  height: 4em;
+  width: auto;
+}
+
+.inner-header-mobile {
+  height: 13vh;
+  width: 100%;
+  background-color: var(--header-color);
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo2 > img {
+  height: 3em;
+  margin-left: 20px;
+}
+
+.hamburger-menu {
+  color: var(--text);
+  margin-right: 20px;
+}
+
+.h-menu-open {
+  animation: fade-in-d 100ms;
+  -moz-animation: fade-in-d 100ms;
+  -webkit-animation: fade-in-d 100ms;
+  -o-animation: fade-in-d 100ms;
+  -ms-animation: fade-in-d 100ms;
+  z-index: 69;
+  width: 100vw;
+}
+
+.h-menu-open > ul {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.h-menu-open > ul > li {
+  display: block;
+}
+
+.h-menu-open > ul > li > a {
+  color: var(--text);
+  background-color: var(--header-color);
+  border-bottom: 0.2px solid var(--text);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.background-image {
+  background-image: url("images/diliman-bg.png");
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100vh;
+  -moz-box-shadow: inset 0 -100px 100px -100px #000000;
+  -webkit-box-shadow: inset 0 -100px 100px -100px #000000;
+  box-shadow: inset 0 -100px 100px -100px #000000;
+  opacity: 0.2;
+  border-bottom: 1vh solid var(--maroon);
+}
+
+.main-content {
+  display: flex;
+  text-align: center;
+  margin-top: 30vh;
+  justify-content: start;
+  flex-wrap: column;
+}
+
+.sec1 {
+  width: 100%;
+  display: inline-flex;
+  gap: 30px;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.sec > div {
+  margin: 10px;
+}
+
+.quick-links {
+  background-color: /*rgba(160, 22, 61, 0.9);*/ var(--header-color);
+  width: 400px;
+  max-width: 90vw;
+  border-radius: 20px;
+  display: grid;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.quick-links > h1 {
+  font-family: var(--font-fam-1);
+  font-size: 2em;
+  color: var(--text);
+}
+
+.links,
+.join-up {
+  text-align: center;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.links > a {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text);
+  text-align: center;
+  border: 1px solid var(--text);
+  border-radius: 18px;
+  transition: 0.2s;
+  background-color: rgba(18, 18, 18, 0.92);
+  font-family: var(--font-fam-2);
+}
+
+.join-up > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-decoration: none;
+  color: rgba(18, 18, 18, 0.92);
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+  transition: 0.2s;
+  border-radius: 18px;
+  font-family: var(--font-fam-2);
+}
+
+.welcome-to-up {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  max-width: 90vw;
+  background-color: var(--maroon);
+  border-radius: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.welcome-to-up > h1 {
+  font-family: var(--font-fam-1);
+  font-size: 2em;
+  color: var(--text);
+}
+
+.welcome-to-up > p {
+  font-family: var(--font-fam-2);
+  color: var(--text);
+  text-align: justify;
+  font-size: 1em;
+  width: 90%;
+  margin-top: 0%;
+}
+
+@media (hover: hover) {
+  .links > a:hover,
+  .join-up > a:hover {
+    background-color: var(--text);
+    color: var(--maroon);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* mobile */
+  .background-image {
+    position: fixed;
+  }
+  .inner-header-mobile {
+    display: flex;
+  }
+
+  .main-content {
+    margin-top: 20vh;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1156px) {
+  /* pc/laptop */
+  .inner-header {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1155px) /* tablet */ {
+  .background-image {
+    position: fixed;
+  }
+  .inner-header-mobile {
+    display: flex;
+  }
+
+  .main-content {
+    margin-top: 20vh;
+    padding-bottom: 10%;
+  }
+}
+
+@keyframes fade-in-d {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

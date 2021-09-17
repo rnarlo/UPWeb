@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>University of the Philippines</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="inner-header">
+            <div class="left-header">
+                <a href="#">News</a>
+                <a href="#">Alumni</a>
+                <a href="#">Research & Academics</a>
+                <a href="#">Administration</a>
+            </div>
+            <div class="logo">
+                <img alt="University of the Philippines" src="assets/images/uplogo.png"> 
+            </div>
+            <div class="right-header">
+                <a href="#">About UP</a>
+                <a href="#">Admissions</a>
+                <a href="#">Campus</a>
+                <a href="#">Give to UP</a>
+            </div>
+        </div>
+        <div class="inner-header-mobile">
+            <div class="logo2">
+                <img alt="University of the Philippines" src="assets/images/uplogo.png"> 
+            </div>
+            <div class="hamburger-menu">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="24" height="24"
+                    viewBox="0 0 172 172"
+                    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none">
+                    </path><g fill="#ffffff"><path d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z"></path></g></g></svg></a>
+                </div>
+            </div>
+            <div class="header-accent maroon"></div>
+            <div class="header-accent yellow"></div>
+            <div class="h-menu-open" style="display:none;">
+                <ul>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Research & Academics</a></li>
+                    <li><a href="#">Adminisration</a></li>
+                    <li><a href="#">About UP</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Campus</a></li>
+                    <li><a href="#">Give to UP</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Main Content-->
+        <div class="main-content">
+            <div class="background-image"></div>
+            <div class="sec1">
+                <div class="quick-links">
+                    <h1>Quick Links</h1>
+                    <div class="links">
+                        <a href="https://publicservice.up.edu.ph/">Public Service</a><br>
+                        <a href="https://up.edu.ph/covid-19-updates/">Covid-19 Updates</a><br>
+                        <a href="https://up.edu.ph/days-of-remembrance/">Days of Remembrance</a><br>
+                        <span class="join-up"><a href="https://up.edu.ph/admissions/">Join UP</a></span><br>
+                    </div>
+                </div>
+                <div class="welcome-to-up">
+                    <h1>Pagbati, iskolar!</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. 
+                        Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+                        Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales 
+                        ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque 
+                        sem at dolor. Maecenas mattis. Sed convallis tristique sem. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante 
+                            dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. 
+                            Fusce nec tellus sed augue semper porta. Mauris massa. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+        <!--Scripts-->
+        
+        <script>
+            $('.hamburger-menu').click(function(a){
+                var menu = document.querySelector('.h-menu-open');
+                if(menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }});
+        </script>
+            
+            
+            </body>
+            </html>
