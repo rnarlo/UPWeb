@@ -170,7 +170,7 @@ body {
 
 .sec1 {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   gap: 30px;
   flex-wrap: wrap-reverse;
   justify-content: center;
