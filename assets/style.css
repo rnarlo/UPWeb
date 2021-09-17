@@ -176,10 +176,6 @@ body {
   justify-content: center;
 }
 
-.sec > div {
-  margin: 10px;
-}
-
 .quick-links {
   background-color: /*rgba(160, 22, 61, 0.9);*/ var(--header-color);
   width: 400px;
