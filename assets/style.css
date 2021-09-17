@@ -1,15 +1,21 @@
 /* Written by Chris Jimenez */
 
-@import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
-@import url("http://fonts.cdnfonts.com/css/recoleta");
+@font-face {
+  font-family: EBGaramond;
+  src: url("fonts/EBGaramond-VariableFont_wght.ttf");
+}
 
+@font-face {
+  font-family: Hindi Siliguri;
+  src: url("fonts/HindSiliguri-Regular.ttf");
+}
 :root {
   --text: #e4ecf1;
   --header-color: #110f11;
   --maroon: #a0163d;
   --yellow: #fac659;
-  --font-fam-1: "Recoleta", sans-serif;
-  --font-fam-2: "Segoe UI", sans-seif;
+  --font-fam-1: "EBGaramond", serif;
+  --font-fam-2: "Hindi Siliguri", sans-seif;
 }
 
 html {
