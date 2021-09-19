@@ -112,16 +112,16 @@ body {
 }
 
 .h-menu-open {
-  animation: fade-in-d 100ms;
-  -moz-animation: fade-in-d 100ms;
-  -webkit-animation: fade-in-d 100ms;
-  -o-animation: fade-in-d 100ms;
-  -ms-animation: fade-in-d 100ms;
   z-index: 69;
   width: 100vw;
 }
 
 .h-menu-open > ul {
+  animation: fade-in-d 100ms;
+  -moz-animation: fade-in-d 100ms;
+  -webkit-animation: fade-in-d 100ms;
+  -o-animation: fade-in-d 100ms;
+  -ms-animation: fade-in-d 100ms;
   width: 100%;
   text-align: center;
   list-style: none;
@@ -141,12 +141,14 @@ body {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  transition: 0.3s;
+  font-family: var(--font-fam-2);
 }
 
 .background-image {
   background-image: url("images/diliman-bg.png");
   z-index: -1;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-size: cover;
@@ -267,13 +269,15 @@ body {
     background-color: var(--text);
     color: var(--maroon);
   }
+
+  .h-menu-open > ul > li > a:hover {
+    background-color: var(--text);
+    color: var(--maroon);
+  }
 }
 
 @media screen and (max-width: 500px) {
   /* mobile */
-  .background-image {
-    position: fixed;
-  }
   .inner-header-mobile {
     display: flex;
   }
@@ -289,12 +293,13 @@ body {
   .inner-header {
     display: flex;
   }
+
+  .h-menu-open {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1155px) /* tablet */ {
-  .background-image {
-    position: fixed;
-  }
   .inner-header-mobile {
     display: flex;
   }

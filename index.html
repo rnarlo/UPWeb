@@ -42,8 +42,8 @@
             </div>
             <div class="header-accent maroon"></div>
             <div class="header-accent yellow"></div>
-            <div class="h-menu-open" style="display:none;">
-                <ul>
+            <div class="h-menu-open">
+                <ul style="display: none;">
                     <li><a href="#">News</a></li>
                     <li><a href="#">Alumni</a></li>
                     <li><a href="#">Research & Academics</a></li>
@@ -87,7 +87,7 @@
         
         <script>
             $('.hamburger-menu').click(function(a){
-                var menu = document.querySelector('.h-menu-open');
+                var menu = document.querySelector('.h-menu-open > ul');
                 if(menu.style.display == "none") {
                 menu.style.display = "block";
             } else {
