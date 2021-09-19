@@ -120,11 +120,11 @@ body {
 }
 
 .h-menu-open > ul {
-  animation: fade-in-d 100ms;
-  -moz-animation: fade-in-d 100ms;
-  -webkit-animation: fade-in-d 100ms;
-  -o-animation: fade-in-d 100ms;
-  -ms-animation: fade-in-d 100ms;
+  animation: fade-in-d 300ms;
+  -moz-animation: fade-in-d 300ms;
+  -webkit-animation: fade-in-d 300ms;
+  -o-animation: fade-in-d 300ms;
+  -ms-animation: fade-in-d 300ms;
   width: 100%;
   text-align: center;
   list-style: none;
