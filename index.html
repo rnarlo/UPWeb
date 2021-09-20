@@ -97,6 +97,7 @@
 
                 event.preventDefault(a);
 
+                $('.h-menu-open > ul').removeClass('closed');
                 $('.h-menu-open > ul').addClass('shown');
                 $('.hamburger-menu').removeClass('shown');
                 $('.exit-menu').addClass('shown');
@@ -105,8 +106,9 @@
             $('.exit-menu').click(function(a){
 
                 event.preventDefault(a);
-
+                
                 $('.h-menu-open > ul').removeClass('shown');
+                $('.h-menu-open > ul').addClass('closed');
                 $('.hamburger-menu').addClass('shown');
                 $('.exit-menu').removeClass('shown');
 

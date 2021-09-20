@@ -128,12 +128,14 @@ body {
 }
 
 .h-menu-open > ul {
-  display: none;
+  display: block;
   width: 100%;
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  opacity: 0;
+  z-index: -4;
 }
 
 .h-menu-open > ul > li {
@@ -153,12 +155,14 @@ body {
 }
 
 .shown {
+  display: block;
   animation: fade-in-d 300ms;
   -moz-animation: fade-in-d 300ms;
   -webkit-animation: fade-in-d 300ms;
   -o-animation: fade-in-d 300ms;
   -ms-animation: fade-in-d 300ms;
-  display: block !important;
+  opacity: 1 !important;
+  z-index: 1;
 }
 
 .background-image {
@@ -279,6 +283,15 @@ body {
   margin-top: 0%;
 }
 
+.closed {
+  z-index: -4;
+  animation: fade-out-u 300ms;
+  -moz-animation: fade-out-u 300ms;
+  -webkit-animation: fade-out-u 300ms;
+  -o-animation: fade-out-u 300ms;
+  -ms-animation: fade-out-u 300ms;
+}
+
 @media (hover: hover) {
   .links > a:hover,
   .join-up > a:hover {
@@ -338,5 +351,16 @@ body {
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-out-u {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -3%, 0);
   }
 }
