@@ -19,6 +19,12 @@
 }
 
 html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-tap-highlight-color: transparent;
+  -o-background-size: cover;
+  -o-tap-highlight-color: transparent;
   background-size: cover;
 }
 
