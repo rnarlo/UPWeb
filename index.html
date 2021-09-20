@@ -94,6 +94,9 @@
         
         <script>
             $('.hamburger-menu').click(function(a){
+
+                event.preventDefault(a);
+
                 var menu = document.querySelector('.h-menu-open > ul');
                 var exit = document.querySelector('.exit-menu');
                 var hamburger = document.querySelector('.hamburger-menu');
@@ -103,6 +106,9 @@
             });
 
             $('.exit-menu').click(function(a){
+
+                event.preventDefault(a);
+
                 var menu = document.querySelector('.h-menu-open > ul');
                 var exit = document.querySelector('.exit-menu');
                 var hamburger = document.querySelector('.hamburger-menu');
