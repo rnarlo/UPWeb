@@ -60,11 +60,18 @@ body {
   font-family: var(--font-fam-1);
   font-size: 0.8em;
   transition: 0.3s;
+  position: relative;
 }
 
-.right-header > a:hover,
-.left-header > a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.right-header > a::after,
+.left-header > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--text);
+  position: absolute;
+  transition: all ease-in-out 300ms;
+  width: 0;
 }
 
 .logo {
@@ -295,6 +302,11 @@ body {
 }
 
 @media (hover: hover) {
+  .right-header > a:hover::after,
+  .left-header > a:hover::after {
+    width: 100%;
+  }
+
   .links > a:hover,
   .join-up > a:hover {
     background-color: var(--text);
