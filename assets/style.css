@@ -162,6 +162,12 @@ body {
   font-family: var(--font-fam-2);
 }
 
+.about-me {
+  background-color: var(--maroon) !important;
+  color: var(--yellow) !important;
+  border-bottom: none !important;
+}
+
 .shown {
   display: block;
   animation: fade-in-d 300ms;
@@ -313,9 +319,10 @@ body {
     color: var(--maroon);
   }
 
-  .h-menu-open > ul > li > a:hover {
-    background-color: var(--text);
-    color: var(--maroon);
+  .h-menu-open > ul > li > a:hover,
+  .about-me:hover {
+    background-color: var(--text) !important;
+    color: var(--maroon) !important;
   }
 }
 
