@@ -353,12 +353,10 @@ body {
 }
 .learn-more {
 	display: flex;
-	justify-content: center;
   position: relative;
 	text-decoration: none;
 	color: var(--yellow);
 	font-family: var(--font-fam-1);
-	transition: ease-in-out 250ms;
 }
 .learn-more::after {
   content: "";
