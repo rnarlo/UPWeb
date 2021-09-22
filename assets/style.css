@@ -328,6 +328,7 @@ body {
 	transition: ease-in-out 250ms;
 	position: relative;
 }
+
 .important {
 	opacity: 1 !important;
 	border: 0.5px solid var(--text);
@@ -337,6 +338,7 @@ body {
 	height: auto;
 	margin-top: 10px;
 	margin-bottom: 20px;
+  border: 0.5px solid var(--text);
 }
 .actual-announcements > * > h2 {
 	font-size: 1.75em;
@@ -352,20 +354,21 @@ body {
 .learn-more {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	padding: 10px;
-	max-height: 30px;
-	border-radius: 18px;
-	width: 120px;
-	border: 1px solid var(--yellow);
-	background-color: var(--yellow);
+  position: relative;
 	text-decoration: none;
-	color: var(--maroon);
-	font-family: var(--font-fam-2);
-	margin-top: 10px;
-	margin-bottom: 0;
-	opacity: 0.7;
+	color: var(--yellow);
+	font-family: var(--font-fam-1);
 	transition: ease-in-out 250ms;
+}
+.learn-more::after {
+  content: "";
+  height: 2px;
+  background-color: var(--text);
+  position: absolute;
+  display: block;
+  width: 0;
+  bottom: -5px;
+  transition: all ease-in-out 250ms;
 }
 @media (hover: hover) {
 	.right-header > a:hover::after,.left-header > a:hover::after {
@@ -382,10 +385,8 @@ body {
 	.actual-announcements > *:hover {
 	opacity: 1;
 	}
-	.learn-more:hover {
-	opacity: 1;
-	background-color: var(--text);
-	border: 1px solid var(--text);
+	.learn-more:hover::after {
+    width: 100%;
 	}
 }
 @media screen and (max-width: 500px) {

@@ -101,59 +101,59 @@
                                         <div class="announcement">
                                             <h2>Foo Baz Bar</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                            Integer nec odio. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
-                                            <a href="" class="learn-more">Learn More</a>
-                                        </div>
-                                        <div class="announcement important">
-                                            <h2>Students call to #JunkSAIS!</h2>
-                                            <p>SAIS is, once again, causing problems to all concerned UP students. Some are forced
-                                                to prerog due to lack of slots for their respective courses.
-                                            </p>
-                                            <img src="assets/images/up-sais.png" class="announcement-img">
-                                            <a href="" class="learn-more">Learn More</a>
-                                        </div>
-                                        <div class="announcement">
-                                            <h2>Foo Baz Bar</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                                 Integer nec odio. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
-                                            <a href="" class="learn-more">Learn More</a>
-                                        </div>
-                                        <div class="announcement important">
-                                            <h2>#UPNotReady</h2>
-                                            <p>It honestly speaks for itself. We're not ready for another semester held online. <br><br>#LigtasNaBalikEskwela</p>
-                                            <a href="" class="learn-more">Learn More</a>
+                                                <a href="" class="learn-more">Learn More</a>
+                                            </div>
+                                            <div class="announcement important">
+                                                <h2>Students call to #JunkSAIS!</h2>
+                                                <p>SAIS is, once again, causing problems to all concerned UP students. Some are forced
+                                                    to prerog due to lack of slots for their respective courses.
+                                                </p>
+                                                <img src="assets/images/up-sais.png" class="announcement-img">
+                                                <a href="" class="learn-more">Learn More</a>
+                                            </div>
+                                            <div class="announcement">
+                                                <h2>Foo Baz Bar</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                    Integer nec odio. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+                                                    <a href="" class="learn-more">Learn More</a>
+                                                </div>
+                                                <div class="announcement important">
+                                                    <h2>#UPNotReady</h2>
+                                                    <p>It honestly speaks for itself. We're not ready for another semester held online. <br><br>#LigtasNaBalikEskwela</p>
+                                                    <a href="" class="learn-more">Learn More</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!--Scripts-->
-                        
-                        <script>
-                            $('.hamburger-menu').click(function(a){
-                                var menu = document.querySelector('.h-menu-open > ul');
+                                <!--Scripts-->
                                 
-                                event.preventDefault(a);
+                                <script>
+                                    $('.hamburger-menu').click(function(a){
+                                        var menu = document.querySelector('.h-menu-open > ul');
+                                        
+                                        event.preventDefault(a);
+                                        
+                                        menu.style.display = "block";
+                                        $('.h-menu-open > ul').removeClass('closed');
+                                        $('.h-menu-open > ul').addClass('shown');
+                                        $('.hamburger-menu').removeClass('shown');
+                                        $('.exit-menu').addClass('shown');
+                                    });
+                                    
+                                    $('.exit-menu').click(function(a){
+                                        
+                                        event.preventDefault(a);
+                                        
+                                        $('.h-menu-open > ul').removeClass('shown');
+                                        $('.h-menu-open > ul').addClass('closed');
+                                        $('.hamburger-menu').addClass('shown');
+                                        $('.exit-menu').removeClass('shown');
+                                        
+                                    });
+                                </script>
                                 
-                                menu.style.display = "block";
-                                $('.h-menu-open > ul').removeClass('closed');
-                                $('.h-menu-open > ul').addClass('shown');
-                                $('.hamburger-menu').removeClass('shown');
-                                $('.exit-menu').addClass('shown');
-                            });
-                            
-                            $('.exit-menu').click(function(a){
                                 
-                                event.preventDefault(a);
-                                
-                                $('.h-menu-open > ul').removeClass('shown');
-                                $('.h-menu-open > ul').addClass('closed');
-                                $('.hamburger-menu').addClass('shown');
-                                $('.exit-menu').removeClass('shown');
-                                
-                            });
-                        </script>
-                        
-                        
-                    </body>
-                    </html>
+                            </body>
+                            </html>
