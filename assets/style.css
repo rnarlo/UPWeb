@@ -387,7 +387,7 @@ body {
     width: 100%;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 889px) {
 	/* mobile */
 	.inner-header-mobile {
 	display: flex;
@@ -399,8 +399,11 @@ body {
 	.welcome-to-up {
 	padding: 0;
 	}
+  .quick-links > h1 {
+    padding-top:0 !important;
+  }
 }
-@media screen and (min-width: 1156px) {
+@media screen and (min-width: 1044px) {
 	/* pc/laptop */
 	.inner-header {
 	display: flex;
@@ -409,21 +412,24 @@ body {
 	display: none;
 	}
 }
-@media screen and (max-width: 1155px) /* tablet */
-{
+@media screen and (max-width: 1043px) /* tablet */ {
 	.inner-header-mobile {
-	display: flex;
+	  display: flex;
 	}
 	.main-content {
-	margin-top: 20vh;
-	margin-bottom: 4.5vh;
+	  margin-top: 20vh;
+	  margin-bottom: 4.5vh;
 	}
   .welcome-to-up {
     width: 400px;
   }
 	.actual-announcements > * {
-	opacity: 0.9;
+	  opacity: 0.9;
 	}
+  .quick-links > h1 {
+    padding-top:6vh;
+  }
+
 }
 @keyframes fade-in-d {
 	0% {
