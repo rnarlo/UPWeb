@@ -403,7 +403,7 @@ body {
     padding-top:0 !important;
   }
 }
-@media screen and (min-width: 1044px) {
+@media screen and (min-width: 1190px) {
 	/* pc/laptop */
 	.inner-header {
 	display: flex;
@@ -412,7 +412,7 @@ body {
 	display: none;
 	}
 }
-@media screen and (max-width: 1043px) /* tablet */ {
+@media screen and (max-width: 1189px) /* tablet */ {
 	.inner-header-mobile {
 	  display: flex;
 	}
