@@ -285,7 +285,7 @@ body {
 }
 .announcement-container {
 	background-color: var(--maroon);
-	width: 90vw;
+  width: 90vw;
 	height: auto;
 	border-radius: 18px;
 	padding-bottom: 4vh;
@@ -418,6 +418,9 @@ body {
 	margin-top: 20vh;
 	margin-bottom: 4.5vh;
 	}
+  .welcome-to-up {
+    width: 400px;
+  }
 	.actual-announcements > * {
 	opacity: 0.9;
 	}
