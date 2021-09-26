@@ -31,7 +31,7 @@ html {
 body {
   margin: 0;
 }
-.header {
+header {
   width: 100%;
   z-index: 888;
   top: 0;
@@ -175,7 +175,7 @@ body {
   border-bottom: 1vh solid var(--maroon);
   filter: blur(3px);
 }
-.main-content {
+main {
   display: flex;
   text-align: center;
   margin-top: 29vh;
@@ -409,7 +409,7 @@ body {
   .inner-header-mobile {
     display: flex;
   }
-  .main-content {
+  main {
     margin-top: 20vh;
     margin-bottom: 4.5vh;
   }
@@ -433,7 +433,7 @@ body {
   .inner-header-mobile {
     display: flex;
   }
-  .main-content {
+  main {
     margin-bottom: 4.5vh;
   }
   .welcome-to-up {

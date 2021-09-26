@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--Header-->
-    <div class="header">
+    <header>
         <div class="inner-header">
             <div class="left-header">
                 <a href="#">News</a>
@@ -62,11 +62,11 @@
                             <li><a href="https://rnarlo.github.io" class="about-me">About the Developer</a></li>
                         </ul>
                     </div>
-                </div>
+                </header>
                 <!--Main Content-->
-                <div class="main-content">
+                <main>
                     <div class="background-image"></div>
-                    <div class="sec1">
+                    <section class="sec1">
                         <div class="quick-links">
                             <h1>Quick Links</h1>
                             <div class="links">
@@ -89,9 +89,9 @@
                                     Fusce nec tellus sed augue semper porta. Mauris massa. </p>
                                     
                                 </div>
-                            </div>
-                        </div>
-                        <div class="lower-content">
+                            </section>
+                        </main>
+                        <section class="lower-content">
                             <div class="announcements">
                                 <div class="announcement-container">
                                     <div class="announcement-header">
@@ -126,34 +126,34 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--Scripts-->
+                        </section>
+<!--Scripts-->
                                 
-                                <script>
-                                    $('.hamburger-menu').click(function(a){
-                                        var menu = document.querySelector('.h-menu-open > ul');
-                                        
-                                        event.preventDefault(a);
-                                        
-                                        menu.style.display = "block";
-                                        $('.h-menu-open > ul').removeClass('closed');
-                                        $('.h-menu-open > ul').addClass('shown');
-                                        $('.hamburger-menu').removeClass('shown');
-                                        $('.exit-menu').addClass('shown');
-                                    });
-                                    
-                                    $('.exit-menu').click(function(a){
-                                        
-                                        event.preventDefault(a);
-                                        
-                                        $('.h-menu-open > ul').removeClass('shown');
-                                        $('.h-menu-open > ul').addClass('closed');
-                                        $('.hamburger-menu').addClass('shown');
-                                        $('.exit-menu').removeClass('shown');
-                                        
-                                    });
-                                </script>
+<script>
+    $('.hamburger-menu').click(function(a){
+        var menu = document.querySelector('.h-menu-open > ul');
+        
+        event.preventDefault(a);
+        
+        menu.style.display = "block";
+        $('.h-menu-open > ul').removeClass('closed');
+        $('.h-menu-open > ul').addClass('shown');
+        $('.hamburger-menu').removeClass('shown');
+        $('.exit-menu').addClass('shown');
+    });
+    
+    $('.exit-menu').click(function(a){
+        
+        event.preventDefault(a);
+        
+        $('.h-menu-open > ul').removeClass('shown');
+        $('.h-menu-open > ul').addClass('closed');
+        $('.hamburger-menu').addClass('shown');
+        $('.exit-menu').removeClass('shown');
+        
+    });
+</script>
                                 
                                 
-                            </body>
-                            </html>
+</body>
+</html>
